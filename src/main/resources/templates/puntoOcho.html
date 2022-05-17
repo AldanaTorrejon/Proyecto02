@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado</title>
+</head>
+<body>
+<h1>Listado Alumnos Aprobados</h1>
+	<table>
+		<tr>
+			<th>Nombre  |</th>
+			<th>Apellido  |</th>
+			<th> ID |</th>
+			<th>  Libreta </th>
+		</tr>
+		<tr>
+		<tr th:each="student:${puntoOcho}">
+			<th th:text="${alumno.Nombre}"></th>
+			<th th:text="${alumno.Apellido}"></th>
+			<th th:text="${alumno.LibretaUni}"></th>
+			<th th:text="${alumno.getStringOfGrades()}"></th>
+		</tr>
+	</table>
+	<br>
+	<a href="borrarAlumno?libreta=3">Eliminar un alumno por ID libreta</a><br><br>
+	<a href="mostrarAprobados?">Mostrar alumnos con promedio mayor a 6</a><br><br>
+	<a href="/index">Volver al Menu</a>
+</body>
+</html>
