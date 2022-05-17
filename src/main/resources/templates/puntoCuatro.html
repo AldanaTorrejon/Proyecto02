@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>¿Par o impar?</title>
+</head>
+<body>
+<table>
+		<tr>
+			<th>Numero</th>
+			<th>¿Par o impar?</th>
+		</tr>
+		<tr>
+		<tr th:each="n:${Numeros}">
+			<th th:text="${n.num}"></th>
+			<th th:text="${n.par}"></th>
+		</tr>
+	</table>
+	<a href="/index">Volver al Menu</a>
+</body>
+</html>
