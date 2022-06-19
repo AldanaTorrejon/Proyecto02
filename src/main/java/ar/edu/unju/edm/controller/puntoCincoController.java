@@ -7,7 +7,7 @@ import ar.edu.unju.edm.model.punto5;
 
 @Controller
 public class puntoCincoController {
-	  @GetMapping("/cadenaInvertir")
+	  @GetMapping("/punto_5")
 	  public String getPunto(Model model){
 	    punto5 revers = new punto5();
 	    revers.setAux("Apruebeme profe");
