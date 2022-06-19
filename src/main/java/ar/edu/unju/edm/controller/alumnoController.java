@@ -8,7 +8,7 @@ import ar.edu.unju.edm.model.Alumno;
 
 @Controller
 public class alumnoController {
-	@GetMapping("/resolverAlumnoPuntoTres")
+	@GetMapping("/punto_3")
 
 	public String getAlumnoPage(Model model) {
 		double promedio=0;

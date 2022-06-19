@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import ar.edu.unju.edm.model.punto4;
 import ar.edu.unju.edm.until.numerosPuntoCuatro;
 public class puntoCuatroController {
-	@GetMapping("/mostrarPuntoCuatro")
+	@GetMapping("/punto_4")
 	public String getPunto4Page(Model model) {
 		
 		//Creacion de los numeros

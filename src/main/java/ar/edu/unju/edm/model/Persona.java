@@ -7,8 +7,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Persona {
 	private LocalDate fecha;
+	private String nombre;
 	 public Persona() {
 	}
+   public String getNombre() {
+		    return nombre;
+		  }
+
+    public void setNombre(String Nombre) {
+		    this.nombre = Nombre;
+		  }
 	public Persona(LocalDate fecha) {
 		super();
 		this.fecha = fecha;
