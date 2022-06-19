@@ -6,14 +6,15 @@ import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import ar.edu.unju.edm.model.ProcesosFecha;
 
+@Controller
 public class procesosFechaController {
 	ProcesosFecha procesoFecha;
-
 	@GetMapping("/punto17")
 	public String getpunto17(Model model){
 		ProcesosFecha pf1 =new ProcesosFecha();
