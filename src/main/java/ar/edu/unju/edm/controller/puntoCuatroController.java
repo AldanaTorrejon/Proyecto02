@@ -1,9 +1,12 @@
 package ar.edu.unju.edm.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ar.edu.unju.edm.model.punto4;
 import ar.edu.unju.edm.until.numerosPuntoCuatro;
+
+@Controller
 public class puntoCuatroController {
 	@GetMapping("/punto_4")
 	public String getPunto4Page(Model model) {
